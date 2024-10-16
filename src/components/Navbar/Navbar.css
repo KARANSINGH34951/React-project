@@ -1,0 +1,30 @@
+/* Styles for background container */
+.bg-container {
+  background-image: url('https://th.bing.com/th/id/OIP.VuqcDYDUJwsKAFy6raL5wwHaHa?w=175&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hero section styles */
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
