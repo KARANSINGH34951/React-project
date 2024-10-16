@@ -1,6 +1,6 @@
 /* Styles for background container */
 .bg-container {
-  background-image: url('https://th.bing.com/th/id/OIP.VuqcDYDUJwsKAFy6raL5wwHaHa?w=175&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7'); 
+  background-image: url('./navbarimg/OIP.jpeg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-/* Hero section styles */
+
 .hero {
   flex: 1;
   display: flex;
