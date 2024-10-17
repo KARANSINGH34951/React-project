@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import NearBy from './NearBy'
+import HotelsCards from './HotelsCards';
 
 const GetLocation = () => {
   const [latitude, setLatitude] = useState(null);
@@ -22,11 +24,14 @@ const GetLocation = () => {
 
   return (
     <div>
-      {latitude && longitude ? (
-        <p>{latitude},{longitude}</p>
+
+       {/* {latitude && longitude ? ( */}
+        {/* <p>{latitude},{longitude}</p>
       ) : (
-        <p>Fetching location...</p>
-      )}
+         <p>Fetching location...</p>
+       )} */}
+
+      <HotelsCards latitude={latitude} longitude={longitude}/>
     </div>
   );
 };
