@@ -28,13 +28,13 @@ const Navbar = () => {
                 <span className="self-center text-xl md:text-2xl font-semibold text-white">Cater Service</span>
               </a>
               
-              <ul className="hidden md:flex space-x-4">
-                <li><a href="#" className="text-white">Home</a></li>
-                <li><a href="#" className="text-white">About</a></li>
-                <li><a href="#" className="text-white">Services</a></li>
-                <li><a href="#" className="text-white">Event</a></li>
-                <li><a href="#" className="text-white">Menu</a></li>
-                <li><a href="#" className="text-white">Contact</a></li>
+              <ul className="hidden md:flex space-x-4 font-bold">
+                <li><a href="#" className="text-white hover:text-blue-400">Home</a></li>
+                <li><a href="#" className="text-white hover:text-blue-400">About</a></li>
+                <li><a href="#" className="text-white hover:text-blue-400">Services</a></li>
+                <li><a href="#" className="text-white hover:text-blue-400">Event</a></li>
+                <li><a href="#" className="text-white hover:text-blue-400">Menu</a></li>
+                <li><a href="#" className="text-white hover:text-blue-400">Contact</a></li>
               </ul>
 
               <div className="md:hidden">

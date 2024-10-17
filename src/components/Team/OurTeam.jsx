@@ -11,10 +11,10 @@ const OurTeam = () => {
       </div>
 
       <div className='px-4 sm:px-8 md:px-12 lg:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-6 gap-6 text-center my-6 '>
-        <UserCard username="karan singh" img={img}  message="Team manager and Hanle operations" />
-        <UserCard username="Rahul" img={img} message="Marketing manager" />
-        <UserCard username="jeeeva" img={img} message="Handle supply chain" />
-        <UserCard username="ravi" img={img} message="Manufacturer" />
+        <UserCard username="karan singh" img={img}  />
+        <UserCard username="Rahul" img={img}  />
+        <UserCard username="jeeeva" img={img}  />
+        <UserCard username="ravi" img={img} />
       </div>
     </div>
   );
