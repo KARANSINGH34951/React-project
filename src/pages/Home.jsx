@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar'
 import AboutUs from '../components/AboutUs/AboutUs'
 import OurService from '../components/OurService/OurService'
 import OurTeam from '../components/Team/OurTeam'
+import NearBy from '../components/Navbar/NearBy/NearBy'
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutUs/>
       <OurService/>
       <OurTeam/>
+      <NearBy/>
     </div>
   )
 }
