@@ -30,6 +30,8 @@ const GetLocation = () => {
       ) : (
          <p>Fetching location...</p>
        )} */}
+       {latitude} he
+       {longitude}
 
       <HotelsCards latitude={latitude} longitude={longitude}/>
     </div>

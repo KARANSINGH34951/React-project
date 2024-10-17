@@ -4,7 +4,7 @@ import Counter from './Counter'
 const AboutUs = () => {
   return (
     <div className='text-black m-4 md:m-10'>
-      <h1 className='text-center text-3xl mb-4'><span className='text-blue-700'>About</span> us</h1>
+      <h1 className='text-center mb-4'><span className='text-blue-700'>About</span> us</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-4'>
         <div className='flex justify-center items-center'>
           <img 
@@ -23,7 +23,7 @@ const AboutUs = () => {
       <Counter/>
 
       <div className='w-full mt-4'>
-        <iframe
+        {/* <iframe
           className='w-full h-64 md:h-96'
           src="https://www.youtube.com/embed/HS24PywYlxg?si=GLxbcP1nFr9KYPyO&autoplay=1&controls=0&modestbranding=1"
           frameBorder="0"
@@ -31,7 +31,7 @@ const AboutUs = () => {
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         >
-        </iframe>
+        </iframe> */}
       </div>
     </div>
   )

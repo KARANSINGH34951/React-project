@@ -1,30 +1,29 @@
-
-*{
+/* Ensure all elements respect padding and borders */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
+/* Reset default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Hero Section */
 .hero {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
-  box-sizing: border-box; 
-}
-
- 
-.bg-container {
-  background-image: url('./navbarimg/OIP.jpeg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
-
-
-.hero {
+  box-sizing: border-box;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -33,16 +32,39 @@
   text-align: center;
 }
 
+/* Full-screen Background Container */
+.bg-container {
+  background-image: url('./navbarimg/OIP.jpeg');  /* Set your background image */
+  background-size: cover;    /* Ensure the image covers the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Full screen using absolute positioning */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;               /* Stretch across the entire width */
+  height: 100%;              /* Stretch across the entire height */
+  z-index: -1;               /* Keep it behind the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hero text */
 .hero h1 {
   font-size: 3rem;
   color: white;
   margin-bottom: 1rem;
 }
 
+/* Navbar Links */
 nav ul li a {
   color: white;
   text-decoration: none;
-}  
+}
 
 nav ul li a:hover {
   text-decoration: underline;

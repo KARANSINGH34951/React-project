@@ -7,10 +7,10 @@ const HotelsCards = ({ latitude, longitude }) => {
     async function fetchApiData(lat, lon) {
       try {
         const response = await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lon}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`);
-        const json = await response.json();
+        const json = await response.json();      
         
-        // Updating the restaurant list from the API response
         setListofres(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []);
+        
       } catch (error) {
         console.error('Error fetching restaurant data:', error);
       }
@@ -19,7 +19,7 @@ const HotelsCards = ({ latitude, longitude }) => {
     if (latitude && longitude) {
       fetchApiData(latitude, longitude);
     }
-  }, [latitude, longitude]); // Added dependencies for latitude and longitude
+  }, [latitude, longitude]); 
 
   return (
     <div>
