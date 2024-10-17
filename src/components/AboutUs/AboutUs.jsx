@@ -4,7 +4,7 @@ import Counter from './Counter'
 const AboutUs = () => {
   return (
     <div className='text-black m-4 md:m-10'>
-      <h1 className='text-center mb-4'><span className='text-blue-700'>About</span> us</h1>
+      <h1 className='text-center mb-4 text-2xl md:text-4xl lg:text-5xl xl:text-5xl'><span className='text-blue-700'>About</span> us</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-4'>
         <div className='flex justify-center items-center'>
           <img 

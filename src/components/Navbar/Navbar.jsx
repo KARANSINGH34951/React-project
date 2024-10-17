@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { gsap } from 'gsap';
+import HeroSection from './HeroSection';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,10 +23,10 @@ const Navbar = () => {
             <a href="/" className="flex items-center space-x-3">
               <img
                 src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/restaurant-logo-design-template-e28d2fe026c8df7d1e4bf636c33d954c_screen.jpg?ts=1595420913"
-                className="h-6 md:h-10"
+                className="h-6 md:h-10 lg:h-12 xl:h-16 rounded-md"
                 alt="Logo"
               />
-              <span className="self-center text-sm md:text-2xl font-semibold text-white">Cater Service</span>
+              <span className="self-center text-sm text-1xl md:text-2xl lg:text-2xl xl:text-4xl font-semibold text-white">Cater Service</span>
             </a>
 
             
@@ -65,15 +66,8 @@ const Navbar = () => {
           </div>
         </nav>
 
-        
-        <div className="hero flex flex-col justify-center items-center text-center h-full p-4 md:p-8">
-          <h1 className="font-bold text-1xl md:text-4xl lg:text-4xl xl:text-5xl text-white">Welcome to Our Catering Service</h1>
-          <p className="text-md md:text-lg text-white mt-2">Delicious food for every occasion</p>
-          <div className="m-2 space-y-2 md:space-x-3 md:space-y-0 flex flex-col md:flex-row justify-center items-center">
-            <button className="px-2 py-1 md:px-6 md:py-2 lg:md:px-7 lg:py-3 bg-black text-white rounded hover:bg-blue-700 w-full md:w-auto text-sm md:text-base">Buy Now</button>
-            <button className="px-2 py-1 md:px-6 lg:md:px-7 md:py-2 lg:py-3 bg-blue-500 text-white rounded hover:bg-blue-700 w-full md:w-auto text-sm md:text-base">Know More</button>
-          </div>
-        </div>
+            <HeroSection/>
+       
       </div>
     </div>
   );
