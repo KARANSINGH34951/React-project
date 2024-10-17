@@ -12,13 +12,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div id="main" className="overflow-x-hidden overflow-y-hidden">
+    <div id="main" className=" overflow-x-hidden z-20">
       <div
-        className="bg-black bg-cover bg-center bg-no-repeat h-screen w-full opacity-90"
-        style={{ backgroundImage: `url('https://images.pexels.com/photos/1546039/pexels-photo-1546039.jpeg?auto=compress&cs=tinysrgb&w=600')` }}
+        className="bg-black  bg-cover bg-center bg-no-repeat h-screen w-full opacity-90"
+        style={{ backgroundImage: `url('https://images.pexels.com/photos/2564252/pexels-photo-2564252.jpeg?auto=compress&cs=tinysrgb&w=600')` }}
       >
-        
-        <nav className="bg-transparent p-4">
+        <nav className="fixed top-0 left-0 w-full bg-transparent p-4">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
             <a href="/" className="flex items-center space-x-3">
               <img
@@ -29,7 +28,6 @@ const Navbar = () => {
               <span className="self-center text-sm text-1xl md:text-2xl lg:text-2xl xl:text-4xl font-semibold text-white">Cater Service</span>
             </a>
 
-            
             <div className="md:hidden">
               <button 
                 className="text-white focus:outline-none" 
@@ -42,17 +40,15 @@ const Navbar = () => {
               </button>
             </div>
 
-            
-            <ul className={`hidden md:flex space-x-4 font-bold ${isMobileMenuOpen ? 'flex' : 'hidden'}`}>
-              <li><a href="#" className="text-white hover:text-blue-400">Home</a></li>
-              <li><a href="#" className="text-white hover:text-blue-400">About</a></li>
-              <li><a href="#" className="text-white hover:text-blue-400">Services</a></li>
-              <li><a href="#" className="text-white hover:text-blue-400">Event</a></li>
-              <li><a href="#" className="text-white hover:text-blue-400">Menu</a></li>
-              <li><a href="#" className="text-white hover:text-blue-400">Contact</a></li>
+            <ul className={`hidden md:flex text-black space-x-4 font-bold `}>
+              <li><a href="#" className="hover:text-blue-400">Home</a></li>
+              <li><a href="#" className="hover:text-blue-400">About</a></li>
+              <li><a href="#" className="hover:text-blue-400">Services</a></li>
+              <li><a href="#" className="hover:text-blue-400">Event</a></li>
+              <li><a href="#" className="hover:text-blue-400">Menu</a></li>
+              <li><a href="#" className="hover:text-blue-400">Contact</a></li>
             </ul>
 
-           
             {isMobileMenuOpen && (
               <ul className="absolute top-16 left-0 w-full bg-black md:hidden flex flex-col space-y-2 p-4 z-10 opacity-90">
                 <li><a href="#" className="text-white hover:text-blue-400">Home</a></li>
@@ -66,8 +62,9 @@ const Navbar = () => {
           </div>
         </nav>
 
-            <HeroSection/>
-       
+        <div className="flex items-center justify-center h-screen pt-16"> {/* Centering HeroSection */}
+          <HeroSection />
+        </div>
       </div>
     </div>
   );

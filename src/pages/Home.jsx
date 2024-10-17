@@ -7,7 +7,7 @@ import NearBy from '../components/NearBy/NearBy';
 
 const Home = () => {
   return (
-    <div className='text-black bg-gray-100 overflow-x-hidden'>
+    <div className='text-black bg-[#FEF9F2] overflow-x-hidden'>
       <Navbar />
       <div className='max-w-screen-xl mx-auto'>
         <AboutUs />
