@@ -15,11 +15,11 @@ const OurService = () => {
   ];
 
   return (
-    <div className='py-10  rounded-lg px-6'>
+    <div className='py-10 rounded-lg px-6'>
       <h1 className='text-center text-4xl font-bold mb-4'>Our Services</h1>
       <h2 className='text-center text-2xl font-medium text-gray-700 mb-10'>What We Offer?</h2>
       
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-10 '>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 md:px-10 -z-10'>
         {services.map((service, index) => (
           <ServiceCard 
             key={index} 

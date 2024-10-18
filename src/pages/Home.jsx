@@ -3,7 +3,8 @@ import Navbar from '../components/Navbar/Navbar';
 import AboutUs from '../components/AboutUs/AboutUs';
 import OurService from '../components/OurService/OurService';
 import OurTeam from '../components/Team/OurTeam';
-import NearBy from '../components/NearBy/NearBy';
+import Events from '../components/Events/Events';
+
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         <AboutUs />
         <OurService />
         <OurTeam />
-        <NearBy/>
+        <Events/>
       </div>
     </div>
   );

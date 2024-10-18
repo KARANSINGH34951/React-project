@@ -12,10 +12,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div id="main" className=" overflow-x-hidden z-20">
+    <div id="main" className=" overflow-x-hidden">
       <div
         className="bg-black  bg-cover bg-center bg-no-repeat h-screen w-full opacity-90"
-        style={{ backgroundImage: `url('https://images.pexels.com/photos/2564252/pexels-photo-2564252.jpeg?auto=compress&cs=tinysrgb&w=600')` }}
+        style={{ backgroundImage: `url('https://images.pexels.com/photos/1449773/pexels-photo-1449773.jpeg?auto=compress&cs=tinysrgb&w=600')` }}
       >
         <nav className="fixed top-0 left-0 w-full bg-transparent p-4">
           <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
@@ -50,7 +50,7 @@ const Navbar = () => {
             </ul>
 
             {isMobileMenuOpen && (
-              <ul className="absolute top-16 left-0 w-full bg-black md:hidden flex flex-col space-y-2 p-4 z-10 opacity-90">
+              <ul className="absolute top-16 left-0 w-full bg-black md:hidden flex flex-col space-y-2 p-4 z-30 ">
                 <li><a href="#" className="text-white hover:text-blue-400">Home</a></li>
                 <li><a href="#" className="text-white hover:text-blue-400">About</a></li>
                 <li><a href="#" className="text-white hover:text-blue-400">Services</a></li>
